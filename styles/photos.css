@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    ox-sizing: border-box;
+}
+
+body {
+    background: url(../IMG/fondo-borroso-oscuro-abstracto-color-textura-degradado-suave-patron-sitio-web-brillante-encabezado-banner-o-imagen-arte-grafico-barra-lateral_1258-85459.png);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+}
+h1{
+    text-align: center;
+
+}
+
+
