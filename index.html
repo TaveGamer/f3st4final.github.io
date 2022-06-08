@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-
-
-
 <head>
-
     <title>F3ST4 FINAL</title>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        list = document.querySelectorAll(".list")
+        function setActiveClass() {
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+        item.addEventListener('mouseover', setActiveClass))
+    </script>
 </head>
-<body>
-    <h1>F3ST4 FIN4L</h1>
+<header>
+    <h1>F3ST4 FINAL</h1>
     <nav>
         <div class = "nav">
             <ul>
@@ -38,28 +44,12 @@
                         <span class = "text">Fotos</span>
                     </a>
                 </li>
-                <li class = "list">
-                    <a href = "#">
-                        <span class = "icon"></span>
-                        <span class = "text">Inici</span>
-                    </a>
-                </li>
             </ul>
         </div>
     </nav>
+</header>
+<body>
 
-
-
-
-            <div class="contenido">
-                <div class="articulos">
-                    <div class="seciones">
-                        <div>
-                            <h2>Subtitulo</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate labore, nihil quasi adipisci debitis eum reprehenderit libero aspernatur? Esse rem sed a vero consectetur sint magni corrupti eos est velit.</p>
-                        </div>
-                        <div> <img src="img/fiestaf1.jpg"></div>
 </body>
 <footer>
-
 </footer> 

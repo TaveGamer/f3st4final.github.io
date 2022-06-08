@@ -2,9 +2,21 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../styles/photos.css">
     <title>Galeria de Fotos</title>
+    <script>
+        var countDownDate = new Date("June 17, 2022 17:00:00").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now
 
-<h1>PROXIMAMENT...</h1>
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+        }, 1000);
+    </script>
 </head>
 
 
@@ -16,33 +28,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuenta regresiva (Temporizador)</title>
 </head>
-<body>
-    <div class="cont-temporizador">
-<div class="bloque">
-<div class="dias" id="dias">00</div>
-<p>DIAS</p>
-</div>
-<div class="bloque">
-    <div class="Horas" id="Horas">00</div>
-    <p>Horas</p>
-
-</div>
-<div class="bloque">
-    <div class="Minutos" id="Minutos">00</div>
-    <p>Minutos</p>
-</div>
-<div class="bloque">
-    <div class="Segundos" id="Segundos">00</div>
-    <p>Segundos </p>
-</div>
-
-
-
-
-
-    </div>
-
-<script src="app.js"></script>
+<h1>PROXIMAMENT</h1>
+<p id = "timer"></p>
 
 </body>
 </html>
